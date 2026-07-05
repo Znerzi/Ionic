@@ -1,27 +1,137 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.portfolio-content {
+  --background: #f8fafc;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.hero-container {
+  padding: 40px 16px 24px 16px;
+  background: white;
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+
+  .avatar-wrapper {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 16px auto;
+    border-radius: 50%;
+    padding: 6px;
+    background: linear-gradient(135deg, var(--ion-color-primary), var(--ion-color-secondary));
+    box-shadow: 0 8px 20px rgba(var(--ion-color-primary-rgb), 0.2);
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: white;
+      object-fit: cover;
+    }
+  }
+
+  .hero-name {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--ion-color-dark);
+    margin: 0 0 4px 0;
+    letter-spacing: -0.5px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--ion-color-step-600);
+    margin: 0 0 16px 0;
+  }
+
+  .hero-bio {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--ion-color-step-700);
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.section-heading {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--ion-color-dark);
+  letter-spacing: -0.3px;
+  margin: 24px 0 8px 0;
 }
 
-#container a {
-  text-decoration: none;
+.skill-summary-card {
+  margin: 6px 0;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+  background: white;
+  border: 1px solid #f1f5f9;
+
+  .feature-icon {
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--ion-color-dark);
+    margin: 0 0 6px 0;
+  }
+
+  p {
+    font-size: 0.88rem;
+    line-height: 1.4;
+    color: var(--ion-color-step-600);
+    margin: 0;
+  }
+}
+
+.glass-card {
+  margin: 8px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+  border: 1px solid #f1f5f9;
+}
+
+.skill-metric-item {
+  .metric-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--ion-color-dark);
+  }
+
+  .metric-bar {
+    height: 8px;
+    border-radius: 4px;
+  }
+}
+
+.project-card {
+  margin: 8px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
+  background: white;
+
+  .project-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  ion-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 4px;
+  }
+
+  .project-desc {
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: var(--ion-color-step-700);
+    margin: 0;
+  }
 }

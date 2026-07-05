@@ -1,20 +1,111 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+  <ion-toolbar color="dark">
+    <ion-title>DevPortfolio</ion-title>
+    <ion-buttons slot="end">
+      <ion-button [href]="profile.github" target="_blank">
+        <ion-icon slot="icon-only" name="logo-github"></ion-icon>
+      </ion-button>
+      <ion-button [href]="profile.linkedin" target="_blank">
+        <ion-icon slot="icon-only" name="logo-linkedin"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding portfolio-content">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <!-- Hero Header Section -->
+  <div class="hero-container ion-text-center ion-margin-bottom">
+    <div class="avatar-wrapper">
+      <img [src]="profile.avatar" [alt]="profile.name" />
+    </div>
+    <h1 class="hero-name">{{ profile.name }}</h1>
+    <p class="hero-subtitle">{{ profile.title }}</p>
+    <p class="hero-bio ion-padding-horizontal">{{ profile.bio }}</p>
+
+    <div class="ion-margin-top">
+      <ion-button (click)="contactMe()" color="primary" shape="round">
+        <ion-icon slot="start" name="mail-outline"></ion-icon>
+        Get In Touch
+      </ion-button>
+    </div>
   </div>
+
+  <!-- Core Competencies Grid Section -->
+  <div class="section-container ion-margin-top">
+    <h2 class="section-heading ion-padding-start">Core Competencies</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-md="4">
+          <ion-card class="skill-summary-card">
+            <ion-card-content class="ion-text-center">
+              <ion-icon name="code-slash-outline" color="primary" class="feature-icon"></ion-icon>
+              <h3>Frontend Architecture</h3>
+              <p>Responsive interface layers built atop reactive data streams.</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="12" size-md="4">
+          <ion-card class="skill-summary-card">
+            <ion-card-content class="ion-text-center">
+              <ion-icon name="layers-outline" color="secondary" class="feature-icon"></ion-icon>
+              <h3>Cross-Platform</h3>
+              <p>Single-codebase application engineering compiling seamlessly to systems.</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="12" size-md="4">
+          <ion-card class="skill-summary-card">
+            <ion-card-content class="ion-text-center">
+              <ion-icon name="phone-portrait-outline" color="tertiary" class="feature-icon"></ion-icon>
+              <h3>Native Runtime</h3>
+              <p>Hardware feature operations access via high performance bridges.</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <!-- Technical Proficiency Metrics Block -->
+  <div class="section-container ion-margin-top">
+    <h2 class="section-heading ion-padding-start">Tech Metrics</h2>
+    <ion-card class="glass-card">
+      <ion-card-content>
+        <div *ngFor="let skill of skills" class="skill-metric-item ion-margin-bottom">
+          <div class="metric-info">
+            <span class="skill-name">{{ skill.name }}</span>
+            <span class="skill-percentage">{{ skill.level | percent:'1.0-0' }}</span>
+          </div>
+          <ion-progress-bar [value]="skill.level" [color]="skill.color" class="metric-bar"></ion-progress-bar>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <!-- Projects Showcase Section -->
+  <div class="section-container ion-margin-top ion-padding-bottom">
+    <h2 class="section-heading ion-padding-start">Featured Engineering Projects</h2>
+    <ion-grid class="ion-no-padding">
+      <ion-row>
+        <ion-col size="12" size-md="6" *ngFor="let project of projects">
+          <ion-card class="project-card">
+            <img [src]="project.image" class="project-img" alt="Project Cover" />
+            <ion-card-header>
+              <ion-card-subtitle color="primary">{{ project.subtitle }}</ion-card-subtitle>
+              <ion-card-title>{{ project.title }}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <p class="project-desc">{{ project.description }}</p>
+              <ion-button fill="clear" size="small" class="ion-no-padding ion-margin-top">
+                Explore Case Study
+                <ion-icon slot="end" name="open-outline"></ion-icon>
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
 </ion-content>
