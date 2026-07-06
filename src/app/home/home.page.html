@@ -74,22 +74,6 @@
       <ion-card-content>
         <div *ngFor="let skill of skills" class="skill-metric-item ion-margin-bottom">
           <div class="metric-info">
-            <span class="skill-name">{{ skill.name }}</span>
-            <span class="skill-percentage">{{ skill.level | percent:'1.0-0' }}</span>
-          </div>
-          <ion-progress-bar [value]="skill.level" [color]="skill.color" class="metric-bar"></ion-progress-bar>
-        </div>
-      </ion-card-content>
-    </ion-card>
-  </div>
-
-  <!-- Projects Showcase Section -->
-  <div class="section-container ion-margin-top ion-padding-bottom">
-    <h2 class="section-heading ion-padding-start">Featured Engineering Projects</h2>
-    <ion-grid class="ion-no-padding">
-      <ion-row>
-        <ion-col size="12" size-md="6" *ngFor="let project of projects">
-          <ion-card class="project-card">
             <img [src]="project.image" class="project-img" alt="Project Cover" />
             <ion-card-header>
               <ion-card-subtitle color="primary">{{ project.subtitle }}</ion-card-subtitle>
