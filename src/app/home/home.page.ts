@@ -22,6 +22,14 @@ import {
   imports: [IonicModule, CommonModule, FormsModule, PercentPipe]
 })
 export class HomePage implements OnInit {
+
+  profile = {
+    name: 'Alex Developer',
+    title: 'Full-Stack Mobile Engineer',
+    bio: 'Crafting high-performance cross-platform mobile experiences using modern web ecosystems and native runtime bridges.',
+    avatar: 'https://ionicframework.com',
+    email: 'alex@example.com',
+    github: 'https://github.com',
       description: 'Low-latency pricing engine dashboard streaming multi-tier telemetry tracking tokens natively across iOS and Android platforms.',
       image: 'https://unsplash.com'
     }
