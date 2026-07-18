@@ -89,7 +89,10 @@
     <ion-grid class="ion-no-padding">
       <ion-row>
         <ion-col size="12" size-md="6" *ngFor="let project of projects">
-          <ion-card class="project-card">subtitle }}</ion-card-subtitle>
+          <ion-card class="project-card">
+            <img [src]="project.image" class="project-img" alt="Project Cover" />
+            <ion-card-header>
+              <ion-card-subtitle color="primary">{{ project.subtitle }}</ion-card-subtitle>
               <ion-card-title>{{ project.title }}</ion-card-title>
             </ion-card-header>
             <ion-card-content>
