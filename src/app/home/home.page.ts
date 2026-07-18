@@ -30,6 +30,15 @@ export class HomePage implements OnInit {
     avatar: 'https://ionicframework.com',
     email: 'alex@example.com',
     github: 'https://github.com',
+    linkedin: 'https://linkedin.com'
+  };
+
+  skills = [
+    { name: 'Ionic Framework', level: 0.95, color: 'primary' },
+    { name: 'Angular / TypeScript', level: 0.90, color: 'secondary' },
+    { name: 'Capacitor Runtime Native Bridges', level: 0.85, color: 'tertiary' },
+    { name: 'Node.js & REST APIs', level: 0.80, color: 'success' }
+  ];
       description: 'Low-latency pricing engine dashboard streaming multi-tier telemetry tracking tokens natively across iOS and Android platforms.',
       image: 'https://unsplash.com'
     }
