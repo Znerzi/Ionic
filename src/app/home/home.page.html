@@ -83,7 +83,13 @@
     </ion-card>
   </div>
 
-  <!-- Projects Showcase Section -->ard-subtitle>
+  <!-- Projects Showcase Section -->
+  <div class="section-container ion-margin-top ion-padding-bottom">
+    <h2 class="section-heading ion-padding-start">Featured Engineering Projects</h2>
+    <ion-grid class="ion-no-padding">
+      <ion-row>
+        <ion-col size="12" size-md="6" *ngFor="let project of projects">
+          <ion-card class="project-card">subtitle }}</ion-card-subtitle>
               <ion-card-title>{{ project.title }}</ion-card-title>
             </ion-card-header>
             <ion-card-content>
