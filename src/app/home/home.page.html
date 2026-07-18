@@ -69,6 +69,13 @@
 
   <!-- Technical Proficiency Metrics Block -->
   <div class="section-container ion-margin-top">
+    <h2 class="section-heading ion-padding-start">Tech Metrics</h2>
+    <ion-card class="glass-card">
+      <ion-card-content>
+        <div *ngFor="let skill of skills" class="skill-metric-item ion-margin-bottom">
+          <div class="metric-info">
+            <span class="skill-name">{{ skill.name }}</span>
+            <span class="skill-percentage">{{ skill.level
               <ion-card-title>{{ project.title }}</ion-card-title>
             </ion-card-header>
             <ion-card-content>
