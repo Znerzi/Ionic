@@ -9,7 +9,16 @@ import { addIcons } from 'ionicons';
     { name: 'Ionic Framework', level: 0.95, color: 'primary' },
     { name: 'Angular / TypeScript', level: 0.90, color: 'secondary' },
     { name: 'Capacitor Runtime Native Bridges', level: 0.85, color: 'tertiary' },
-    { name: 'Node.js
+    { name: 'Node.js & REST APIs', level: 0.80, color: 'success' }
+  ];
+
+  projects = [
+    {
+      title: 'E-Commerce Mobile Ecosystem',
+      subtitle: 'Ionic, NgRx, Stripe Integration',
+      description: 'A lightning-fast storefront system operating multi-threaded state syncing via local database persistence caches.',
+      image: 'https://unsplash.com'
+    },
     }
   ];
 
