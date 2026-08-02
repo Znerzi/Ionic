@@ -3,6 +3,22 @@ import { CommonModule, PercentPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { addIcons } from 'ionicons';
+import {
+  logoGithub,
+  logoLinkedin,
+  mailOutline,
+  codeSlashOutline,
+  layersOutline,
+  phonePortraitOutline,
+  rocketOutline,
+  openOutline
+} from 'ionicons/icons';
+
+@Component({
+  selector: 'app-home',
+  templateUrl: './home.page.html',
+  styleUrls: ['./home.page.scss'],
+  standalone: true,
   };
 
   skills = [
