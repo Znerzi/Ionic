@@ -1,60 +1,10 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="dark">
-    <ion-title>DevPortfolio</ion-title>
-    <ion-buttons slot="end">
-      <ion-button [href]="profile.github" target="_blank">
-        <ion-icon slot="icon-only" name="logo-github"></ion-icon>
-      </ion-button>
-      <ion-button [href]="profile.linkedin" target="_blank">
-        <ion-icon slot="icon-only" name="logo-linkedin"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true" class="ion-padding portfolio-content">
+    <ion-title>DevPortfolio</ion
+      <ion-button [href]="profile.linkedin" target=content">
 
   <!-- Hero Header Section -->
-  <div class="hero-container ion-text-center ion-margin-bottom">
-    <div class="avatar-wrapper">
-      <img [src]="profile.avatar" [alt]="profile.name" />
-    </div>
-    <h1 class="hero-name">{{ profile.name }}</h1>
-    <p class="hero-subtitle">{{ profile.title }}</p>
-    <p class="hero-bio ion-padding-horizontal">{{ profile.bio }}</p>
-
-    <div class="ion-margin-top">
-      <ion-button (click)="contactMe()" color="primary" shape="round">
-        <ion-icon slot="start" name="mail-outline"></ion-icon>
-        Get In Touch
-      </ion-button>
-    </div>
-  </div>
-
-  <!-- Core Competencies Grid Section -->
-  <div class="section-container ion-margin-top">
-    <h2 class="section-heading ion-padding-start">Core Competencies</h2>
-    <ion-grid>
-      <ion-row>
-        <ion-col size="12" size-md="4">
-          <ion-card class="skill-summary-card">
-            <ion-card-content class="ion-text-center">
-              <ion-icon name="code-slash-outline" color="primary" class="feature-icon"></ion-icon>
-              <h3>Frontend Architecture</h3>
-              <p>Responsive interface layers built atop reactive data streams.</p>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-        <ion-col size="12" size-md="4">
-          <ion-card class="skill-summary-card">
-            <ion-card-content class="ion-text-center">
-              <ion-icon name="layers-outline" color="secondary" class="feature-icon"></ion-icon>
-              <h3>Cross-Platform</h3>
-              <p>Single-codebase application engineering compiling seamlessly to systems.</p>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-        <ion-col size="12" size-md="4">
+  <div class="hero-contai
           <ion-card class="skill-summary-card">
             <ion-card-content class="ion-text-center">
               <ion-icon name="phone-portrait-outline" color="tertiary" class="feature-icon"></ion-icon>
