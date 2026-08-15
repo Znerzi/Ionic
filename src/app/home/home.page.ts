@@ -33,6 +33,14 @@ export class HomePage implements OnInit {
     linkedin: 'https://linkedin.com'
   };
 
+  skills = [
+    { name: 'Ionic Framework', level: 0.95, color: 'primary' },
+    { name: 'Angular / TypeScript', level: 0.90, color: 'secondary' },
+    { name: 'Capacitor Runtime Native Bridges', level: 0.85, color: 'tertiary' },
+    { name: 'Node.js & REST APIs', level: 0.80, color: 'success' }
+  ];
+
+  projects = [
     {
       title: 'E-Commerce Mobile Ecosystem',
       subtitle: 'Ionic, NgRx, Stripe Integration',
