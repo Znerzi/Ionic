@@ -1,4 +1,5 @@
-
+import { Component, OnInit } from '@angular/core';
+import { CommonModule, PercentPipe } from '@angular/common';
     {
       title: 'E-Commerce Mobile Ecosystem',
       subtitle: 'Ionic, NgRx, Stripe Integration',
