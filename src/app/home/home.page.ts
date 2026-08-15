@@ -22,6 +22,17 @@ import {
   imports: [IonicModule, CommonModule, FormsModule, PercentPipe]
 })
 export class HomePage implements OnInit {
+
+  profile = {
+    name: 'Alex Developer',
+    title: 'Full-Stack Mobile Engineer',
+    bio: 'Crafting high-performance cross-platform mobile experiences using modern web ecosystems and native runtime bridges.',
+    avatar: 'https://ionicframework.com',
+    email: 'alex@example.com',
+    github: 'https://github.com',
+    linkedin: 'https://linkedin.com'
+  };
+
     {
       title: 'E-Commerce Mobile Ecosystem',
       subtitle: 'Ionic, NgRx, Stripe Integration',
