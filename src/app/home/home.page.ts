@@ -11,6 +11,17 @@ import {
   layersOutline,
   phonePortraitOutline,
   rocketOutline,
+  openOutline
+} from 'ionicons/icons';
+
+@Component({
+  selector: 'app-home',
+  templateUrl: './home.page.html',
+  styleUrls: ['./home.page.scss'],
+  standalone: true,
+  imports: [IonicModule, CommonModule, FormsModule, PercentPipe]
+})
+export class HomePage implements OnInit {
     {
       title: 'E-Commerce Mobile Ecosystem',
       subtitle: 'Ionic, NgRx, Stripe Integration',
