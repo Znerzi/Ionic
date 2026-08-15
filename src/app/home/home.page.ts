@@ -1,5 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule, PercentPipe } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { IonicModule } from '@ionic/angular';
+import { addIcons } from 'ionicons';
+import {
+  logoGithub,
+  logoLinkedin,
+  mailOutline,
+  codeSlashOutline,
+  layersOutline,
+  phonePortraitOutline,
+  rocketOutline,
     {
       title: 'E-Commerce Mobile Ecosystem',
       subtitle: 'Ionic, NgRx, Stripe Integration',
