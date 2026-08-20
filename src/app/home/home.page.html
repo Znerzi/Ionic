@@ -1,33 +1,5 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="dark">
-    <ion-title>DevPortfolio</ion-title>
-    <ion-buttons slot="end">
-      <ion-button [href]="profile.github" target="_blank">
-        <ion-icon slot="icon-only" name="logo-github"></ion-icon>
-      </ion-button>
-      <ion-button [href]="profile.linkedin" target="_blank">
-        <ion-icon slot="icon-only" name="logo-linkedin"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true" class="ion-padding portfolio-content">
-
-  <!-- Hero Header Section -->
-  <div class="hero-container ion-text-center ion-margin-bottom">
-    <div class="avatar-wrapper">
-      <img [src]="profile.avatar" [alt]="profile.name" />
-    </div>
-    <h1 class="hero-name">{{ profile.name }}</h1>
-    <p class="hero-subtitle">{{ profile.title }}</p>
-    <p class="hero-bio ion-padding-horizontal">{{ profile.bio }}</p>
-
-    <div class="ion-margin-top">
-      <ion-button (click)="contactMe()" color="primary" shape="round">
-        <ion-icon slot="start" name="mail-outline"></ion-icon>
-        Get In Touch
-      </ion-button>
     </div>
   </div>
 
