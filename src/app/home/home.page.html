@@ -21,7 +21,13 @@
     </div>
     <h1 class="hero-name">{{ profile.name }}</h1>
     <p class="hero-subtitle">{{ profile.title }}</p>
-    <p class="hero-bio ion-padding-
+    <p class="hero-bio ion-padding-horizontal">{{ profile.bio }}</p>
+
+    <div class="ion-margin-top">
+      <ion-button (click)="contactMe()" color="primary" shape="round">
+        <ion-icon slot="start" name="mail-outline"></ion-icon>
+        Get In Touch
+      </ion-button>
           </ion-card>
         </ion-col>
         <ion-col size="12" size-md="4">
