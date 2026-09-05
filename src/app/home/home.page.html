@@ -7,7 +7,19 @@
       </ion-button>
       <ion-button [href]="profile.linkedin" target="_blank">
         <ion-icon slot="icon-only" name="logo-linkedin"></ion-icon>
-      </ion-buttle.name }}</h1>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding portfolio-content">
+
+  <!-- Hero Header Section -->
+  <div class="hero-container ion-text-center ion-margin-bottom">
+    <div class="avatar-wrapper">
+      <img [src]="profile.avatar" [alt]="profile.name" />
+    </div>
+    <h1 class="hero-name">{{ profile.name }}</h1>
     <p class="hero-subtitle">{{ profile.title }}</p>
     <p class="hero-bio ion-padding-
           </ion-card>
