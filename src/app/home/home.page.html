@@ -9,7 +9,16 @@ ime</h3>
     </ion-grid>
   </div>
 
-  <!-- 
+  <!-- Technical Proficiency Metrics Block -->
+  <div class="section-container ion-margin-top">
+    <h2 class="section-heading ion-padding-start">Tech Metrics</h2>
+    <ion-card class="glass-card">
+      <ion-card-content>
+        <div *ngFor="let skill of skills" class="skill-metric-item ion-margin-bottom">
+          <div class="metric-info">
+            <span class="skill-name">{{ skill.name }}</span>
+            <span class="skill-percentage">{{ skill.level | percent:'1.0-0' }}</span>
+          </div>
           <ion-progress-bar [value]="skill.level" [color]="skill.color" class="metric-bar"></ion-progress-bar>
         </div>
       </ion-card-content>
