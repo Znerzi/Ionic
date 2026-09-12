@@ -20,7 +20,16 @@
       <img [src]="profile.avatar" [alt]="profile.name" />
     </div>
     <h1 class="hero-name">{{ profile.name }}</h1>
-    <p class="hero-subtitle">{{ profile.tit
+    <p class="hero-subtitle">{{ profile.title }}</p>
+    <p class="hero-bio ion-padding-horizontal">{{ profile.bio }}</p>
+
+    <div class="ion-margin-top">
+      <ion-button (click)="contactMe()" color="primary" shape="round">
+        <ion-icon slot="start" name="mail-outlineompetencies</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-md="4">
+          <ion-card class="skill-summary-card">
             <ion-card-content class="ion-text-center">
               <ion-icon name="code-slash-outline" color="primary" class="feature-icon"></ion-icon>
               <h3>Frontend Architecture</h3>
