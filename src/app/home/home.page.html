@@ -17,7 +17,7 @@
   <div class="hero-container ion-text-center ion-margin-bottom">
     <div class="avatar-wrapper">
       <img [src]="profile.avatar" [alt]="profile.name" />
-    </div
+    </div>
     <h1 class="hero-name">{{ profile.name }}</h1>
     <p class="hero-subtitle">{{ profile.titape="round">
         <ion-icon slot="start" name="mail-outline"></ion-icon>
@@ -32,7 +32,10 @@
     <ion-grid>
       <ion-row>
         <ion-col size="12" size-md="4">
-          <ion-card class="skill-summary-ca
+          <ion-card class="skill-summary-card">
+            <ion-card-content class="ion-text-center">
+              <ion-icon name="code-slash-outline" color="primary" class="feature-icon"></ion-icon>
+              <h3>Frontend Architecture</h3>
               <p>Responsive interface layers built atop reactive data streams.</p>
             </ion-card-content>
           </ion-card>
