@@ -8,3 +8,6 @@ describe('AppComponent', () => {
       imports: [AppComponent],
       providers: [provideRouter([])]
     }).compileComponents();
+
+    const fixture = TestBed.createComponent(AppComponent);
+    con
