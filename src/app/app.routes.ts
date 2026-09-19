@@ -7,4 +7,5 @@ export const routes: Routes = [
   },
   {
     path: '',
- a
+    redirectTo: 'home',
+    pa
