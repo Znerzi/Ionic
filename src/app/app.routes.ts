@@ -8,4 +8,5 @@ export const routes: Routes = [
   {
     path: '',
     redirectTo: 'home',
-    pa
+    pathMatch: 'full',
+  },
