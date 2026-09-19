@@ -10,4 +10,7 @@ describe('AppComponent', () => {
     }).compileComponents();
 
     const fixture = TestBed.createComponent(AppComponent);
-    con
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
+  });
+});
