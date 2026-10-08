@@ -20,6 +20,14 @@
     </ion-grid>
   </div>
 
+  <!-- Technical Proficiency Metrics Block -->
+        <div *ngFor="let skill of skills" class="skill-metric-item ion-margin-bottom">
+          <div class="metric-info">
+            <span class="skill-name">{{ skill.name }}</span>
+            <span class="skill-percentage">{{ skill.level | percent:'1.0-0' }}</span>
+          </div>
+          <ion-progress-bar [value]="skill.level" [color]="skill.color" class="metric-bar"></ion-progress-bar>
+        </div>
       </ion-card-content>
     </ion-card>
   </div>
